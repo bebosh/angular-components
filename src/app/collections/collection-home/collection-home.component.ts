@@ -3,13 +3,20 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-collection-home',
   templateUrl: './collection-home.component.html',
-  styleUrls: ['./collection-home.component.css']
+  styleUrls: ['./collection-home.component.css'],
 })
 export class CollectionHomeComponent implements OnInit {
+  data = [
+    { name: 'Pippo', age: 70, job: 'cartoon goofer' },
+    { name: 'Paperino', age: 50, job: 'duck' },
+    { name: 'Clarabella', age: 50, job: 'farmer' },
+  ];
+  headers = [
+    { key: 'name', label: 'Name' },
+    { key: 'age', label: 'Age' },
+    { key: 'job', label: 'Job' },
+  ];
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

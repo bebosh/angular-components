@@ -1,0 +1,4 @@
+/* this css is used to remode all from the block if it is empty */
+div.ui.icon.header:empty{
+  display:none;
+}
